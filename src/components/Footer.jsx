@@ -33,9 +33,9 @@ const Footer = (props) => {
                 <img src={phone_logo} alt="" className="w-5 h-5 invert" aria-hidden="true" />
                 <span>{props.contact}</span>
               </a>
-              <a href={`mailto:${props.gmail}`} className="flex items-center justify-center md:justify-start space-x-3 text-blue-200 hover:text-white transition-colors">
-                <img src={gmail_logo} alt="" className="w-5 h-5 invert" aria-hidden="true" />
-                <span>{props.gmail}</span>
+              <a href={`mailto:${props.gmail}`} className="flex items-center justify-center md:justify-start space-x-3 text-blue-200 hover:text-white transition-colors group">
+                <img src={gmail_logo} alt="" className="w-5 h-5 invert flex-shrink-0" aria-hidden="true" />
+                <span className="text-sm break-all">{props.gmail}</span>
               </a>
             </div>
           </div>
