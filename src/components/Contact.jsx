@@ -22,13 +22,14 @@ function Contact() {
                                 <div className="space-y-6">
                                     {/* Email */}
                                     <div className="flex items-start gap-4 group">
-                                        <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                                        <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors flex-shrink-0">
                                             <img src={gmail_logo} alt="" className="w-6 h-6" aria-hidden="true" />
                                         </div>
-                                        <div>
+                                        <div className="min-w-0">
                                             <p className="text-sm font-medium text-gray-500 mb-1">Email</p>
-                                            <a href="mailto:cmeakicrrt@gmail.com" className="text-lg text-gray-900 hover:text-blue-900 transition-colors">
-                                                cmeakicrrt@gmail.com
+                                            <a href="mailto:cmekidneytransplantsaiimsbpl@gmail.com" 
+                                               className="text-base md:text-lg text-gray-900 hover:text-blue-900 transition-colors break-all block">
+                                                cmekidneytransplantsaiimsbpl@gmail.com
                                             </a>
                                         </div>
                                     </div>
@@ -73,7 +74,7 @@ function Contact() {
                         <div className="bg-white p-4 rounded-xl shadow-md border border-gray-100 h-full min-h-[450px] overflow-hidden">
                             <iframe
                                 title="AIIMS Bhopal Medical College Building Location"
-                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7333.82904491581!2d77.44684859169759!3d23.209785516171667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLecture%20Theatre%20-%204%2C%202nd%20Floor%2C%20Sardar%20Vallabh%20Bhai%20Patel%20Building%20AIIMS%20Bhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1755940886888!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2730.0279262725917!2d77.45815080284764!3d23.20899085042855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLecture%20Theatre%20-%204%2C%202nd%20Floor%2C%20Sardar%20Vallabh%20Bhai%20Patel%20Building%20AIIMS%20Bhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1756138940546!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0, borderRadius: '1rem' }}
