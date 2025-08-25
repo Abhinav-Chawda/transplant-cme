@@ -93,13 +93,6 @@ function App() {
             </div>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
       </section>
 
       {/* About Section */}
@@ -118,17 +111,17 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             <div className="h-full">
               <Speaker_img
+                name="Dr. Anupma Kaul"
+                post="Professor - Nephrology SGPGI Lucknow"
+                image={Dr_Anupma_img}
+                />
+            </div>
+            <div className="h-full">
+              <Speaker_img
                 name="Dr. Dharmendra Bhadauria"
                 post="Prof.(Ex.) - Nephrology SGPGI Lucknow"
                 post2="Sr. Consultant & Director Nephrology Medanta, Lucknow"
                 image={Dr_Dharmendra_img}
-              />
-            </div>
-            <div className="h-full">
-              <Speaker_img
-                name="Dr. Anupma Kaul"
-                post="Professor - Nephrology SGPGI Lucknow"
-                image={Dr_Anupma_img}
               />
             </div>
             <div className="h-full">
@@ -152,9 +145,9 @@ function App() {
               A comprehensive day of learning, networking, and professional development.
             </p>
           </div>
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto shadow-lg rounded-xl">
             <div className="inline-block min-w-full">
-              <table className="min-w-full bg-white rounded-xl shadow-lg" role="table" aria-label="Conference Schedule">
+              <table className="min-w-full bg-white rounded-xl" role="table" aria-label="Conference Schedule">
                 <thead className="bg-blue-50">
                   <tr>
                     <th scope="col" className="py-4 px-6 font-semibold text-gray-900">Time</th>
@@ -169,28 +162,33 @@ function App() {
                     <td className="py-2 px-4">-</td>
                   </tr>
                   <tr className="border-t">
-                    <td className="py-2 px-4">10:30 - 11:30 am</td>
-                    <td className="py-2 px-4">ABOi Kidney transplants</td>
-                    <td className="py-2 px-4">Dr. Dharmendra Bhadauria<br/>Prof. (Ex.) Nephrology SGPGI, Lucknow<br/>Sr. Consultant & Director Nephrology Medanta, Lucknow</td>
+                    <td className="py-2 px-4">10:30 - 11:00 am</td>
+                    <td className="py-2 px-4">Challenging situations in highly Sensitive Kidney transplantation</td>
+                    <td className="py-2 px-4">Dr. Anupma Kaul<br/>Professor- Nephrology<br/>SGPGI, Lucknow</td>
                   </tr>
                   <tr className="border-t bg-blue-50">
+                    <td className="py-2 px-4">11:00 - 11:30 am</td>
+                    <td className="py-2 px-4" colSpan="2">Inauguration by Prof. (Dr.) Madhavanand Kar, Director and CEO, AIIMS Bhopal at LT-4, Sardar Patel Building AIIMS, Bhopal</td>
+                  </tr>
+                  <tr className="border-t">
                     <td className="py-2 px-4">11:30 - 12:00 pm</td>
-                    <td className="py-2 px-4" colSpan="2">Inauguration by Prof. (Dr.) Madhavanand Kar, Director and CEO, AIIMS Bhopal at 12:00 am LT-4, Sardar Patel Building AIIMS, Bhopal</td>
+                    <td className="py-2 px-4">Challenging situations in ABO incompatible Kidney transplants</td>
+                    <td className="py-2 px-4">Dr. Dharmendra Bhadauria<br/>Prof. (Ex.) Nephrology SGPGI<br/>Sr. Consultant & Director Nephrology Medanta, Lucknow</td>
                   </tr>
                   <tr className="border-t">
-                    <td className="py-2 px-4">12:00 - 01:00 pm</td>
-                    <td className="py-2 px-4">Evaluation of Highly Sensitive Kidney transplant Recipients</td>
-                    <td className="py-2 px-4">Dr. Anupma Kaul<br/>Professor- Nephrology SGPGI, Lucknow</td>
-                  </tr>
-                  <tr className="border-t">
-                    <td className="py-2 px-4">01:00 - 02:00 pm</td>
+                    <td className="py-2 px-4">12:00 - 12:30 pm</td>
                     <td className="py-2 px-4">Challenges of Acute rejection diagnosis in Kidney transplant Patents</td>
                     <td className="py-2 px-4">Dr. Alok Sharma<br/>Head Pathology & Renal Histopathology<br/>LAL Pathology- New Delhi</td>
                   </tr>
                   <tr className="border-t">
-                    <td className="py-2 px-4">02:00 - 02:15 pm</td>
-                    <td className="py-2 px-4">Vote for Thanks</td>
-                    <td className="py-2 px-4">Dr. Rajat<br/>SR Nephrology</td>
+                    <td className="py-2 px-4">12:30 - 1:00 pm</td>
+                    <td className="py-2 px-4">Challenges in management of cadaver donor</td>
+                    <td className="py-2 px-4">Dr. Rahul Sharma<br/>Asso. Prof CTVS, AIIMS, Bhopal</td>
+                  </tr>
+                  <tr className="border-t">
+                    <td className="py-2 px-4">1:00 - 1:30 pm</td>
+                    <td className="py-2 px-4">Vote of Thanks</td>
+                    <td className="py-2 px-4">Dr. Abhishek, Dr. Rajat<br/>SR Nephrology</td>
                   </tr>
                 </tbody>
               </table>
@@ -207,7 +205,7 @@ function App() {
 
       {/* Footer */}
       <footer className="mt-auto">
-        <Footer gmail='cmeakicrrt@gmail.com' contact='7728043033' />
+        <Footer gmail='cmekidneytransplantsaiimsbpl@gmail.com' contact='7728043033' />
       </footer>
     </div>
   );
